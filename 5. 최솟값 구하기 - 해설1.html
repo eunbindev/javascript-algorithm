@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(arr) {
+        let answer;
+        // 큰 숫자로 초기화
+        let min = Number.MAX_SAFE_INTEGER;
+
+        // 배열은 0부터, 길이는 1부터 시작한다.
+        for (let i = 0; i < arr.length; i++) {
+          if (min > arr[i]) min = arr[i];
+        }
+
+        answer = min;
+        return answer;
+      }
+
+      let arr = [5, 7, 1, 3, 2, 9, 11];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
